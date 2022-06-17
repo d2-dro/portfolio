@@ -21,6 +21,9 @@ h1 {
 header {
     background-color: #31353d;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -41,12 +44,20 @@ header nav {
     float: right;
 }
 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
 header nav ul li {
     display: inline;
 }
 
 header nav ul li a {
-    margin: 0 2px;
+    margin: 0 5px;
     border-bottom: 3px solid;
     border-color: #92ccce;
     padding: 10px 10px 4px 10px;
@@ -74,14 +85,159 @@ header nav ul li a {
     right: 70px;
 }
 
+/* end hero section style */
+
+/* about section style */
+
 .section-header h1 {
-    width: 50px;
+    width: 10%;
     text-align: right;
+    border-right: 3px solid #445876;
+    padding-right: 10px;
+    
 }
 
-.section-header div {
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    float: inline-end;
+
+.section-header {
+    display: flex;
+    flex: auto;
+    padding: 10px 10px 10px 10px;
+    
+
+    
+    
+  
 }
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+
+}
+
+#about-me article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-left: 20px;
+}
+
+/* about section style end */
+
+
+/* work box container styles */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    
+    padding-left: 20px;
+
+}
+
+.sub-container h2 {
+    padding-right: 15px;
+}
+
+
+
+
+.run-buddy {
+    
+    background-image: url("../images/run\ buddy\ screen.png");
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.led {
+    background-image: url("../images/LED-Wall-Benefits.png");
+    height: 280px;
+    width: 640px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.calculator {
+    background-image: url("../images/calculator.jpg");
+    height: 280px;
+    width: 640px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.surf {
+    background-image: url("../images/surf.jpg");
+    height: 280px;
+    width: 640px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pastel {
+    background-image: url("../images/pastel.png");
+    height: 280px;
+    width: 640px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.run-buddy h2, p {
+    background-color: #92ccce;
+    display: inline-block;
+    
+    position: relative;
+    bottom: 100px;
+
+}
+
+.sub-container h2, p {
+    background-color: #92ccce;
+    display: inline-block;
+    
+    position: relative;
+    bottom: -200px;
+    padding-right: 100px;
+
+}
+
+/* end work box container style */
+
+/* contact section style */
+
+#contact-me {
+    display: flex;
+    
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-me ul li {
+    margin: 0 20px;
+    border-bottom: 3px solid;
+    border-color: #31353d;
+    padding: 10px 10px 4px 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-me a {
+    text-decoration: none;
+    color: black;
+}
+
+/* end content section style */
